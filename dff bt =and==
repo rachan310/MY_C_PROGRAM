@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main() {
+    int a; 
+    a = 10; 
+    printf("After assignment: a = %d\n", a); 
+    if (a == 10000) { 
+        printf("a is equal to 10000.\n"); 
+    } else {
+        printf("a is not equal to 100000.\n");
+    }
+    if (a == 5000) { 
+        printf("a is equal to 50000.\n");
+    } else {
+        printf("a is not equal to 50000.\n"); 
+    }
+    if (a = 15000) {
+        printf("Inside the if block after accidental assignment: a = %d\n", a); 
+    }
+}
