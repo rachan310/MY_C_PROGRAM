@@ -1,0 +1,10 @@
+#include <stdio.h>
+int main() {
+    int sinu = 20;
+    int rachan = 14;
+    if (sinu >= 18 && rachan ) {
+        printf("Eligible to come on S.I.E.T campuss to women.\n");
+    } else {
+        printf("Not eligible to come on S.I.E.T campuss to women. .\n");
+    }
+}
