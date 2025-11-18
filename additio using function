@@ -1,0 +1,9 @@
+#include <stdio.h>
+int rachan(int a,int b)
+{
+   int c=a+b;
+   printf("%d",c);
+}
+int main() {      
+    rachan(4,8);
+}
