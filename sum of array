@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main(){
+    int rachan[7];
+    int sum=0;
+    printf("enter a elements\n");
+    scanf("%d",&rachan);
+    for( int i=0;i<7;i++){
+        scanf("%d",&rachan[i]);
+        sum+=rachan[i];
+        
+    }
+    printf("%d",sum);
+}
