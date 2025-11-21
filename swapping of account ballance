@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main(){
+    int acc1,acc2,temp;
+    printf("enter a accout ballance\n");
+    scanf("%d  %d" ,&acc1,&acc2);
+    printf("-!@#$%^&* befor swaping========\n");
+    temp=acc1;
+    acc1=acc2;
+    acc2=temp;
+    printf(" !@#$%^&*after swaping==========\n");
+    printf(" acc1%d acc2 %d",acc1,acc2);
+}
