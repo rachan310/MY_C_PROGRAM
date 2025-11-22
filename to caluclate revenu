@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main() {
+    const int NUM_BRANCHES = 3;  
+    const int NUM_PRODUCTS = 4;   
+    int units[3][4] = {
+        { 10, 20, 15, 5 },   
+        { 7,  14, 21, 3 },   
+        { 12, 6,  9,  10 }   
+    };
+    double revenue_per_unit[4] = { 5.0, 12.5, 7.2, 20.0 };
+    double branch_total[3] = {0};
+    for (int b = 0; b < NUM_BRANCHES; b++) {
+        double total = 0;
+        for (int p = 0; p < NUM_PRODUCTS; p++) {
+            total += units[b][p] * revenue_per_unit[p];
+        };
+        branch_total[b] = total;
+}
+    printf("Total Revenue per Branch:\n");
+    for (int b = 0; b < NUM_BRANCHES; b++) {
+        printf("Branch %d: $%.2f\n", b, branch_total[b]);
+    }
+}
